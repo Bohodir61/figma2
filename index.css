@@ -1,0 +1,75 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+ul li{
+    list-style-type: none;
+   
+}
+
+ul{
+    display: flex;
+    gap: 50px;
+}
+
+.box{
+    display: flex;
+    align-content: center;
+    gap: 30px;
+}
+
+.box i{
+    position: relative;
+    top: 29px;
+}
+
+
+.box p{
+        background-color:rgba(73, 73, 73, 1);
+        color: #ffff;
+        padding: 12px 30px;
+        border-radius: 20px;
+}
+
+.uidesk{
+    font-weight: 500;
+}
+
+ul li:first-child{
+    color: rgba(95, 184, 72, 1);
+}
+
+span{
+    color: rgba(95, 184, 72, 1);
+    
+}
+
+
+.healthy{
+    font-family: Sharp Sans No1;
+font-size: 76px;
+font-weight: 550;
+width: 600px;
+}
+
+.enjoyeating{
+    width: 450px;
+    font-family: Sharp Sans No1;
+font-size: 24px;
+font-weight: 500;
+line-height: 34px;
+
+}
+
+
+.ordernow{
+    background:linear-gradient(rgba(100, 187, 71, 1), rgba(44, 149, 83, 1));
+    width: 100px;
+    color: white;
+    padding: 12px;
+    border-radius: 40px;
+    text-align: center;
+    font-size: 19px;
+}
