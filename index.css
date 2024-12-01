@@ -1,75 +1,848 @@
-header{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
     display: flex;
     align-items: center;
+    justify-content: center;
+    gap: 60px;
     justify-content: space-around;
 }
 
-ul li{
-    list-style-type: none;
-   
-}
-
-ul{
+.text {
     display: flex;
-    gap: 50px;
-}
-
-.box{
-    display: flex;
-    align-content: center;
+    align-items: center;
+    justify-content: center;
     gap: 30px;
+    font-weight: 400;
+    font-size: 17px;
 }
 
-.box i{
-    position: relative;
-    top: 29px;
-}
-
-
-.box p{
-        background-color:rgba(73, 73, 73, 1);
-        color: #ffff;
-        padding: 12px 30px;
-        border-radius: 20px;
-}
-
-.uidesk{
-    font-weight: 500;
-}
-
-ul li:first-child{
+.text  p:nth-child(1){
     color: rgba(95, 184, 72, 1);
 }
+
+.btn button{
+    padding: 8px;
+    background-color: rgba(73, 73, 73, 1);
+    color: #ffff;
+    border-radius: 30px;
+    width: 150px;
+    height: 50px;
+    font-size: 15px;
+}
+
+.order{
+    align-items: center;
+    display: flex;
+    gap: 10px;
+
+}
+
+.order i{
+    font-size: 22px;
+}
+
+.orderandsearch{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
 
 span{
     color: rgba(95, 184, 72, 1);
-    
 }
 
-
-.healthy{
-    font-family: Sharp Sans No1;
+.main .abouteat >.eathealth{
 font-size: 76px;
-font-weight: 550;
+font-weight: 600;
+line-height: 95px;
 width: 600px;
+padding-top: 180px;
 }
 
-.enjoyeating{
-    width: 450px;
+
+.main .abouteat .enjoyhealthy{
     font-family: Sharp Sans No1;
 font-size: 24px;
 font-weight: 500;
 line-height: 34px;
+width: 450px;
+}
 
+.main .ordernow{
+    color: #fff;
+    padding: 12px;
+    background:linear-gradient(rgba(100, 187, 71, 1), rgba(44, 149, 83, 1));
+    border: 1px;
+    border-radius: 50px;
+    width: 124px;
+    height: 50px;
+    font-size: 17px;
+    
 }
 
 
-.ordernow{
-    background:linear-gradient(rgba(100, 187, 71, 1), rgba(44, 149, 83, 1));
-    width: 100px;
-    color: white;
+.main{
+    display: flex;
+    justify-content: space-around;
+}
+
+.imgsal .salat{
+    width: 780px;
+position: relative;
+left: -105px;
+}
+
+.abouteat{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 120px;
+}
+
+.choosing{
+    font-family: Sharp Sans No1;
+font-size: 54px;
+font-weight: 770;
+line-height: 67.5px;
+text-align: center;
+}
+
+.choosing p:nth-child(2){
+font-size: 24px;
+font-weight: 400;
+line-height: 30px;
+text-align: center;
+}
+
+.users p:nth-child(2){
+font-size: 28px;
+font-weight: 770;
+line-height: 35px;  
+}
+
+.users p:nth-child(3){
+font-size: 18px;
+font-weight: 500;
+line-height: 28px;
+width: 250px;
+}
+
+.users .liveorder{
+font-size: 28px;
+font-weight: 770;
+line-height: 35px;
+}
+
+.onlineorder{
+font-size: 18px;
+font-weight: 500;
+line-height: 28px;
+width: 230px;
+}
+
+.organic100{
+font-size: 28px;
+font-weight: 770;
+line-height: 35px;
+}
+
+.organicfood{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+width: 230px;
+}
+
+.users{
+    display: flex;
+    justify-content: space-around;
+}
+
+.questionare img, p:nth-child(2){
+   padding: 14px;
+   align-items: center;
+}
+
+.questionare img{
+padding-left: 45px;
+}
+
+.map img, p:nth-child(2){
+    padding: 14px;
+}
+
+.map img{
+    padding-left: 32px;
+}
+
+.leaf img, p:nth-child(2){
+    padding: 14px;
+}
+
+.leaf img{
+    padding-left: 49px;
+}
+
+.clients p:nth-child(1){
+font-size: 44px;
+font-weight: 780;
+}
+
+.clients p:nth-child(2){
+    font-size: 20px;
+    font-weight: 500;  
+}
+
+.clients{
+    display: flex;
+    justify-content: space-around;
+    width: 1200px;
+    align-items: center;
+    text-align: center;
+margin-left: 140px;
+padding-top: 61px;
+}
+
+.data p:nth-child(1){
+font-size: 54px;
+font-weight: 600;
+line-height: 67.5px;
+padding: 28px 16px;
+}
+
+.about p:nth-child(2){
+font-size: 22px;
+font-weight: 500;
+line-height: 34px;
+width: 395px;
+}
+
+.data button{
+    background:linear-gradient(rgba(100, 187, 71, 1),rgba(44, 149, 83, 1));
     padding: 12px;
     border-radius: 40px;
-    text-align: center;
-    font-size: 19px;
+    color: #ffff;
+    border: 1px;
+    width: 200px;
+    height: 60px;
+    font-size: 22px;
+    position: relative;
+    top: 60px;
+
 }
+
+.data button:hover{
+    background:linear-gradient(rgba(44, 149, 83, 1),  rgba(100, 187, 71, 1));
+    transition-duration: 1s;
+    cursor: pointer;
+}
+
+.about{
+    display: flex;
+    justify-content: space-around;
+}
+
+.meals .cactus{
+    position: relative;
+top: -337px;
+left: 305px;
+}
+
+.meals{
+    padding-top: 144px;
+}
+
+.data{
+    padding-top: 300px;
+}
+
+.meals .caram{
+    position: relative;
+    left: -8px;
+}
+
+.freshdish .bakground{
+    background-color: rgba(225, 242, 225, 1);
+    width: 480px;
+height: 480px;
+border-radius: 50%;
+z-index: -1;
+position: relative;
+top: -430px;
+left: 75px;
+}
+
+
+
+.freshdish{
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+}
+
+ .aboutt p:nth-child(1){
+font-size: 54px;
+font-weight: 770;
+line-height: 67.5px;
+width: 390px;
+}
+
+.aboutt p:nth-child(2){
+font-size: 22px;
+font-weight: 500;
+line-height: 34px;
+width: 450px;
+padding-top: 30px;
+}
+
+.salatwithbakcolor{
+    position: relative;
+    top: 230px;
+}
+
+.learnmore{
+    background:linear-gradient(rgba(100, 187, 71, 1),rgba(44, 149, 83, 1));
+    padding: 12px;
+    border-radius: 40px;
+    color: #ffff;
+    border: 1px;
+    width: 200px;
+    height: 60px;
+    font-size: 22px;
+    position: relative;
+    top: 60px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.cooked .cookbestchef{
+    font-family: DM+Sans;
+font-size: 54px;
+font-weight: 770;
+line-height: 67.5px;
+width: 335px;
+}
+
+
+.cooked .believing{
+font-size: 22px;
+font-weight: 500;
+line-height: 34px;
+width: 500px;
+}
+
+.cooked i{
+    font-size: 20px;
+    background-color: rgba(110, 191, 75, 1);
+    border-radius: 6px;
+    color: #fff;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cooked p:nth-child(3){
+    font-size: 20px;
+}
+
+.cooked p:nth-child(4){
+    font-size: 20px;
+}
+
+.cooked p:nth-child(5){
+    font-size: 20px;
+}
+
+.cooked{
+    display: flex;
+    justify-content: space-around;
+}
+
+ .oshpaz img{
+    position: relative;
+    top: -130px;
+} 
+
+
+.speacialdishes p:nth-child(1){
+    font-family:DM+Sans;
+font-size: 54px;
+font-weight: 550;
+line-height: 67.5px;
+text-align: center;
+}
+.speacialdishes p:nth-child(2){
+    font-family: DM+Sans;
+font-size: 24px;
+font-weight: 500;
+line-height: 30px;
+text-align: center;
+}
+
+.menue1 .greensalad{
+    font-family: DM+Sans;
+font-size: 27px;
+font-weight: 600;
+line-height: 30px;
+text-align: center;
+padding: 12px;
+}
+
+.menue1 .a-salad{
+font-size: 18px;
+font-weight: 500;
+line-height: 28px;
+text-align: center;
+width: 280px;
+padding: 12px;
+}
+
+
+.menue1{
+    border: 2px solid rgba(235, 235, 235, 1);
+    width: 310px;
+    border-radius: 13px;
+    padding: 12px;
+}
+
+.menue1 img{
+    margin-left: 15px;
+}
+.menue2 p:nth-child(2){
+    font-family: DM+Sans;
+font-size: 27px;
+font-weight: 600;
+line-height: 30px;
+padding: 12px;
+text-align: center;
+}
+    
+    .menue2 p:nth-child(3){
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: center;
+    width: 280px;
+    padding: 12px;
+    }
+
+    .menue2{
+        border: 2px solid rgb(248, 248, 248);
+        width: 310px;
+        border-radius: 13px;
+        padding: 12px;
+    }
+    
+    .menue2 img{
+        margin-left: 15px;
+    }
+
+
+    .menue3 p:nth-child(2){
+        font-family: DM+Sans;
+    font-size: 27px;
+    font-weight: 600;
+    line-height: 30px;
+    padding: 12px;
+    text-align: center;
+    }
+        
+        .menue3 p:nth-child(3){
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 28px;
+        text-align: center;
+        width: 280px;
+        padding: 12px;
+        }
+    
+        .menue3{
+            border: 2px solid rgba(235, 235, 235, 1);
+            width: 310px;
+            border-radius: 13px;
+            padding: 12px;
+        }
+        
+        .menue3 img{
+            margin-left: 15px;
+        }
+
+        .menu{
+            display: flex;
+            justify-content: space-around;
+            padding-top: 53px;
+        }
+
+        .button .viewall{
+            background:linear-gradient(rgba(100, 187, 71, 1),rgba(44, 149, 83, 1));
+            padding: 12px;
+            border-radius: 40px;
+            color: #ffff;
+            border: 1px;
+            width: 200px;
+            height: 60px;
+            font-size: 22px;
+            margin-left: 650px;
+            
+        
+        }
+
+        .button{
+            padding: 63px;
+        }
+
+        .says p:nth-child(1){
+font-size: 54px;
+font-size: 54px;
+font-weight: 500;
+line-height: 67.5px;
+text-align: center;
+position: relative;
+top: 270px;
+        }
+    
+         .ceoofdesk{
+font-size: 14px;
+font-weight: 500;
+position: relative;
+left: 122px;
+top: -65px;
+        } 
+
+        .khall{
+ font-size: 20px;
+font-weight: 770;
+line-height: 25px;
+position: relative;
+left: 105px;
+top: -73px;
+        }
+
+        .firstperson p:nth-child(5){
+font-size: 18px;
+font-weight: 500;
+line-height: 30px;
+width: 400px;
+        }
+
+        
+
+        .firstperson .kavchka{
+         margin-left: 250px;
+position: absolute;
+top: 20px;
+        }
+
+        .secondperson p:nth-child(2){
+font-size: 20px;
+font-weight: 770;
+line-height: 25px;
+        }
+
+
+        .secondperson p:nth-child(3){
+font-size: 14px;
+font-weight: 500;
+line-height: 17.5px;
+        }
+
+        .secondperson p:nth-child(4){
+font-size: 18px;
+font-weight: 500;
+line-height: 30px;
+width: 400px;
+        }
+
+        .twosuggestion{
+               display: flex; 
+        }
+
+        #zeeshan{
+            position: relative;
+            top: -88px;
+            left: 105px;
+
+        }
+
+        #ceoofbox{
+            position: relative;
+            top: -97px;
+            left: 125px;
+        }
+
+        .twosuggestion{
+            position: relative;
+            top: 340px;
+            display: flex;
+            /* justify-content: space-around; */
+            gap: 30px;
+            justify-content: center;
+        }
+
+        .says{
+            background-color: rgb(249, 249, 249);
+            height: 920px;
+        }
+
+        .firstperson{
+            background-color: #fff;
+            padding: 44px;
+            border-radius: 17px;
+        }
+
+        .secondperson{
+            background-color: #fff;
+            padding: 44px;
+            border-radius: 17px;
+        }
+
+        .strelka{
+            text-align: center;
+            justify-content: center;
+            display: flex;
+            gap: 23px;
+            position: relative;
+            top: 390px;
+        }
+
+        .kavchka2{
+            position: relative;
+            left: 245px;
+            top: -40px;
+        }
+
+        .reallyboy{
+            width: 350px;
+        }
+
+        .subscribe .stonewsletter{
+            font-size: 36px;
+            font-weight: 770;
+            line-height: 45px;
+            text-align: center;          
+        }
+
+
+        .subscribe .enteruremail{
+font-size: 20px;
+text-align: center;
+line-height: 24px;
+        }
+
+        input{
+            width: 280px;
+height: 50px;
+border-radius: 165px;
+border: 1px solid rgb(234, 234, 234);
+font-size: 15px;
+padding: 12px;
+        }
+
+
+        .subscribe .getstart{
+            background:linear-gradient(rgba(100, 187, 71, 1), rgba(44, 149, 83, 1));
+            padding: 11px;
+            width: 145px;
+            height: 53px;
+            border-radius: 28px;
+            border: 1px solid rgba(100, 187, 71, 1);
+            color: #fff;
+            font-family: Sofia Pro;
+font-size: 20px;
+font-weight: 400;
+line-height: 26.84px;
+text-align: center;
+        }
+
+    .getstart:hover{
+            background:linear-gradient( rgba(44, 149, 83, 1),  rgb(61, 203, 18));
+            transition-duration: 2s;
+            cursor: pointer;
+        }
+
+
+        .subscribe .email-button{
+            align-items: center;
+            justify-content: center;
+           text-align: center;
+           display: flex;
+           gap: 15px;
+           padding: 60px;
+        }
+
+        .subscribe{
+            padding-top: 110px;
+        }
+
+        .footer .onformed{
+font-size: 16px;
+font-weight: 400;
+line-height: 20px;
+        }
+
+        .footer .uidisk{ 
+font-size: 26px;
+font-weight: 770;
+line-height: 32.5px;
+        }   
+
+
+        .footer .footerhome{
+            align-items: center;
+            
+        }
+
+        .footer{
+            
+            align-items: center;
+            justify-content: space-around;
+            /* gap: 20px; */
+            display: flex;  
+        }
+
+
+        .footer p {
+            margin: 0;
+            padding: 0;
+
+        }
+        
+
+        .footerhome{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .partner{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .contact{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .footerabout{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .footerhome p:nth-child(1){
+font-size: 22px;
+font-weight: 770;
+        }
+.footerhome p:nth-child(2){
+font-size: 16px;
+font-weight: 500;
+line-height: 20px;
+color: rgba(101, 117, 130, 1);
+}
+.footerhome p:nth-child(3){
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    color: rgba(101, 117, 130, 1);
+    }
+    .footerhome p:nth-child(4){
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        color: rgba(101, 117, 130, 1);
+        }
+
+        .partner p:nth-child(1){
+font-size: 22px;
+font-weight: 770;
+        }
+
+
+.footerabout p:nth-child(2){
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    color: rgba(101, 117, 130, 1);
+}
+.footerabout p:nth-child(3){
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    color: rgba(101, 117, 130, 1);
+}
+.footerabout p:nth-child(4){
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    color: rgba(101, 117, 130, 1);
+}
+
+
+
+
+        .partner p:nth-child(2){
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 20px;
+            color: rgba(101, 117, 130, 1);
+            }
+
+            .partner p:nth-child(3){
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 20px;
+                color: rgba(101, 117, 130, 1);
+                }
+                .partner p:nth-child(4){
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 20px;
+                    color: rgba(101, 117, 130, 1);
+                    }
+            
+
+        .contact p:nth-child(1){
+            font-size: 22px;
+font-weight: 770;
+        }
+        .contact p:nth-child(2){
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 20px;
+            color: rgba(101, 117, 130, 1);
+        }
+        .contact p:nth-child(3){
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 20px;
+            color: rgba(101, 117, 130, 1);
+        }
+        .contact p:nth-child(4){
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 20px;
+            color: rgba(101, 117, 130, 1);
+        }
+
+        .footerabout p:nth-child(1){
+            font-size: 22px;
+font-weight: 770;
+        }
+
+        .bottom p{
+text-align: center;
+font-size: 16px;
+padding-top: 20px;   
+        }
+
+        .bottom{
+            background:linear-gradient(rgba(100, 187, 71, 1), rgba(44, 149, 83, 1));
+            height: 63px;
+            color: #ffff;
+            position: relative;
+            top: 120px;
+        }
